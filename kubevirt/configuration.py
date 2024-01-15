@@ -40,7 +40,7 @@ class Configuration(object):
     Do not edit the class manually.
     """
 
-    def __init__(self):
+    def __init__(self, username=""):
         """
         Constructor
         """
@@ -57,7 +57,7 @@ class Configuration(object):
         # dict to store API prefix (e.g. Bearer)
         self.api_key_prefix = {}
         # Username for HTTP basic authentication
-        self.username = ""
+        self.username = username
         # Password for HTTP basic authentication
         self.password = ""
 
