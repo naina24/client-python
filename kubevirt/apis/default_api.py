@@ -14264,7 +14264,7 @@ class DefaultApi(object):
             select_header_accept(['application/json', 'application/yaml', 'application/json;stream=watch'])
 
         # Authentication setting
-        auth_settings = []
+        auth_settings = ['BearerToken']
 
         return self.api_client.call_api('/apis/kubevirt.io/v1/namespaces/{namespace}/virtualmachines/{name}', 'GET',
                                         path_params,
