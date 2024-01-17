@@ -221,6 +221,7 @@ class RESTClientObject(object):
         return r
 
     def GET(self, url, headers=None, query_params=None, _preload_content=True, _request_timeout=None):
+        logger.debug("url: %s",url)
         return self.request("GET", url,
                             headers=headers,
                             _preload_content=_preload_content,
