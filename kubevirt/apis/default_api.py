@@ -349,7 +349,7 @@ class DefaultApi(object):
             select_header_content_type(['application/json', 'application/yaml'])
 
         # Authentication setting
-        auth_settings = []
+        auth_settings = ['BearerToken']
 
         return self.api_client.call_api('/apis/kubevirt.io/v1/namespaces/{namespace}/virtualmachines', 'POST',
                                         path_params,
@@ -4390,7 +4390,7 @@ class DefaultApi(object):
             select_header_content_type(['application/json', 'application/yaml'])
 
         # Authentication setting
-        auth_settings = []
+        auth_settings = ['BearerToken']
 
         return self.api_client.call_api('/apis/kubevirt.io/v1/namespaces/{namespace}/virtualmachines/{name}', 'DELETE',
                                         path_params,
@@ -16200,7 +16200,7 @@ class DefaultApi(object):
             select_header_content_type(['application/json', 'application/yaml'])
 
         # Authentication setting
-        auth_settings = []
+        auth_settings = ['BearerToken']
 
         return self.api_client.call_api('/apis/kubevirt.io/v1/namespaces/{namespace}/virtualmachines/{name}', 'PUT',
                                         path_params,
