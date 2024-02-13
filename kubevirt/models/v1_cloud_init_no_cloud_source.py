@@ -31,7 +31,7 @@ class V1CloudInitNoCloudSource(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'network_data': 'str',
+        'network_data': 'dict',
         'network_data_base64': 'str',
         'network_data_secret_ref': 'K8sIoApiCoreV1LocalObjectReference',
         'secret_ref': 'K8sIoApiCoreV1LocalObjectReference',
