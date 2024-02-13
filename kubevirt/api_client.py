@@ -157,10 +157,10 @@ class ApiClient(object):
         return_data = response_data
         if _preload_content:
             # deserialize response data
-            # if response_type:
-            #     return_data = self.deserialize(response_data, response_type)
-            # else:
-            #     return_data = None
+            if response_type:
+                return_data = self.deserialize(response_data, response_type)
+            else:
+                return_data = None
 
         if callback:
             if _return_http_data_only:
