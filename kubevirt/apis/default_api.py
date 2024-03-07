@@ -12295,7 +12295,7 @@ class DefaultApi(object):
             select_header_content_type(['application/json-patch+json', 'application/merge-patch+json'])
 
         # Authentication setting
-        auth_settings = []
+        auth_settings = ['BearerToken']
 
         return self.api_client.call_api('/apis/kubevirt.io/v1/namespaces/{namespace}/virtualmachines/{name}', 'PATCH',
                                         path_params,
