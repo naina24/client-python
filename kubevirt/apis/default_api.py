@@ -26156,7 +26156,7 @@ class DefaultApi(object):
             select_header_content_type(['*/*'])
 
         # Authentication setting
-        auth_settings = []
+        auth_settings = ['BearerToken']
 
         return self.api_client.call_api('/apis/subresources.kubevirt.io/v1/namespaces/{namespace}/virtualmachineinstances/{name}/addvolume', 'PUT',
                                         path_params,
