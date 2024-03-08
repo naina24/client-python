@@ -18766,7 +18766,7 @@ class DefaultApi(object):
             select_header_content_type(['*/*'])
 
         # Authentication setting
-        auth_settings = []
+        auth_settings = ['BearerToken']
 
         return self.api_client.call_api('/apis/subresources.kubevirt.io/v1/namespaces/{namespace}/virtualmachines/{name}/memorydump', 'PUT',
                                         path_params,
@@ -18880,7 +18880,7 @@ class DefaultApi(object):
             select_header_content_type(['*/*'])
 
         # Authentication setting
-        auth_settings = []
+        auth_settings = ['BearerToken']
 
         return self.api_client.call_api('/apis/subresources.kubevirt.io/v1/namespaces/{namespace}/virtualmachines/{name}/migrate', 'PUT',
                                         path_params,
@@ -19097,7 +19097,7 @@ class DefaultApi(object):
 
         body_params = None
         # Authentication setting
-        auth_settings = []
+        auth_settings = ['BearerToken']
 
         return self.api_client.call_api('/apis/subresources.kubevirt.io/v1/namespaces/{namespace}/virtualmachines/{name}/removememorydump', 'PUT',
                                         path_params,
@@ -19875,7 +19875,7 @@ class DefaultApi(object):
             select_header_content_type(['*/*'])
 
         # Authentication setting
-        auth_settings = []
+        auth_settings = ['BearerToken']
 
         return self.api_client.call_api('/apis/subresources.kubevirt.io/v1/namespaces/{namespace}/virtualmachines/{name}/start', 'PUT',
                                         path_params,
@@ -19986,7 +19986,7 @@ class DefaultApi(object):
             select_header_content_type(['*/*'])
 
         # Authentication setting
-        auth_settings = []
+        auth_settings = ['BearerToken']
 
         return self.api_client.call_api('/apis/subresources.kubevirt.io/v1/namespaces/{namespace}/virtualmachines/{name}/stop', 'PUT',
                                         path_params,
@@ -25701,7 +25701,7 @@ class DefaultApi(object):
             select_header_accept(['application/json'])
 
         # Authentication setting
-        auth_settings = []
+        auth_settings = ['BearerToken']
 
         return self.api_client.call_api('/apis/subresources.kubevirt.io/v1/namespaces/{namespace}/virtualmachines/{name}/expand-spec', 'GET',
                                         path_params,
@@ -25811,7 +25811,7 @@ class DefaultApi(object):
 
         body_params = None
         # Authentication setting
-        auth_settings = []
+        auth_settings = ['BearerToken']
 
         return self.api_client.call_api('/apis/subresources.kubevirt.io/v1/namespaces/{namespace}/virtualmachines/{name}/portforward/{port}', 'GET',
                                         path_params,
@@ -25928,7 +25928,7 @@ class DefaultApi(object):
 
         body_params = None
         # Authentication setting
-        auth_settings = []
+        auth_settings = ['BearerToken']
 
         return self.api_client.call_api('/apis/subresources.kubevirt.io/v1/namespaces/{namespace}/virtualmachines/{name}/portforward/{port}/{protocol}', 'GET',
                                         path_params,
@@ -26042,7 +26042,7 @@ class DefaultApi(object):
             select_header_content_type(['*/*'])
 
         # Authentication setting
-        auth_settings = []
+        auth_settings = ['BearerToken']
 
         return self.api_client.call_api('/apis/subresources.kubevirt.io/v1/namespaces/{namespace}/virtualmachines/{name}/removevolume', 'PUT',
                                         path_params,
